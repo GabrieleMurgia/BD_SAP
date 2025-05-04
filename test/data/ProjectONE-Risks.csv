@@ -1,0 +1,4 @@
+ID,Title,Impact,Criticality,Owner
+2000,Data breach,High,5,Alice
+2001,System downtime,Medium,3,Bob
+2002,Unauthorized access,High,4,Charlie
