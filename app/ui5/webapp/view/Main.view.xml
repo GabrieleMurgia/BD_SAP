@@ -1,0 +1,24 @@
+<mvc:View controllerName="riskmitigation.ui5.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+  <Page title="Mitigations">
+    <content>
+      <Table items="{/Mitigations}">
+        <columns>
+          <Column><Text text="ID"/></Column>
+          <Column><Text text="Description"/></Column>
+          <Column><Text text="Owner"/></Column>
+        </columns>
+        <items>
+          <ColumnListItem>
+            <cells>
+              <Text text="{ID}"/>
+              <Text text="{description}"/>
+              <Text text="{owner}"/>
+            </cells>
+          </ColumnListItem>
+        </items>
+      </Table>
+    </content>
+  </Page>
+</mvc:View>
