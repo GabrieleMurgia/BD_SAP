@@ -8,6 +8,7 @@ entity Risks
     descr : String(100);
     impact : Integer;
     criticality : Integer;
+    Owner        : String; 
     mitigation : Association to one Mitigations;
 }
 
