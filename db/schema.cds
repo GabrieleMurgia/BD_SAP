@@ -2,7 +2,7 @@ namespace ProjectONE;
 
 entity Risks
 {
-    key ID : UUID;
+    key ID : Integer;
     title : String(100);
     prio : String(5);
     descr : String(100);

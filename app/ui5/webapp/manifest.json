@@ -87,7 +87,6 @@
         "transition": "slide",
         "type": "View",
         "viewType": "XML",
-        "path": "riskmitigation.ui5.view",
         "async": true,
         "viewPath": "riskmitigation.ui5.view"
       },
@@ -98,12 +97,21 @@
           "target": [
             "TargetMain"
           ]
+        },
+        {
+          "name": "RouteDetail",
+          "pattern": "detail/{id}",
+          "target": [
+            "TargetDetail"
+          ]
         }
       ],
       "targets": {
         "TargetMain": {
-          "id": "Main",
-          "name": "Main"
+          "viewName": "Main"
+        },
+        "TargetDetail": {
+          "viewName": "Detail"
         }
       }
     },

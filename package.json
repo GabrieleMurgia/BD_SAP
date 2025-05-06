@@ -29,24 +29,30 @@
     "cds-watch": "cds watch --open",
     "watch-ui5": "cds watch --open ui5/webapp/index.html?sap-ui-xx-viewCache=false"
   },
-  "cds": {
-    "sql": {
-      "native_hana_associations": false
+"cds": {
+  "sql": {
+    "native_hana_associations": false
+  },
+  "requires": {
+    "db": {
+      "kind": "sqlite",
+      "credentials": {
+        "database": "my.db"
+      }
     },
-    "requires": {
-      "[production]": {
-        "db": "hana",
-        "auth": "xsuaa"
+    "[production]": {
+      "db": "hana",
+      "auth": "xsuaa"
+    },
+    "auth": {
+      "[development]": {
+        "kind": "dummy"
       },
-      "auth": {
-        "[development]": {
-          "kind": "dummy"
-        },
-        "[production]": {
-          "kind": "xsuaa"
-        }
+      "[production]": {
+        "kind": "xsuaa"
       }
     }
-  },
+  }
+},
   "lcap": true
 }

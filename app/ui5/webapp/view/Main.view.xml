@@ -1,20 +1,24 @@
-<mvc:View controllerName="riskmitigation.ui5.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-  <Page title="Mitigations">
+<?xml version="1.0" encoding="UTF-8"?>
+<mvc:View
+  controllerName="riskmitigation.ui5.controller.Main"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page title="Elenco Rischi">
     <content>
-      <Table items="{/Mitigations}">
+      <Table items="{/Risks}" mode="None">
         <columns>
-          <Column><Text text="ID"/></Column>
-          <Column><Text text="Description"/></Column>
+          <Column><Text text="Titolo"/></Column>
+          <Column><Text text="Impatto"/></Column>
+          <Column><Text text="Criticità"/></Column>
           <Column><Text text="Owner"/></Column>
         </columns>
         <items>
-          <ColumnListItem>
+          <ColumnListItem type="Active" press="onRiskPress">
             <cells>
-              <Text text="{ID}"/>
-              <Text text="{description}"/>
-              <Text text="{owner}"/>
+              <Text text="{title}"/>
+              <Text text="{ path: 'impact', formatter: '.formatter.formatImpact' }"/>
+              <Text text="{ path: 'criticality', formatter: '.formatter.formatCriticality' }"/>
+              <Text text="{Owner}"/>
             </cells>
           </ColumnListItem>
         </items>
