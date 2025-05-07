@@ -16,13 +16,7 @@ sap.ui.define([
         const oView = this.getView();
       
         // ★ usa SEMPRE il nome della chiave
-        /* oView.bindElement(`/Risks(ID=${sId})`); */
-        oView.bindElement({
-          path: `/Risks(ID=${sId})`,
-          parameters: {
-            expand: 'mitigation'
-          }
-        });
+        oView.bindElement(`/Risks(ID=${sId})`);
       },
   
       onNavBack: function () {

@@ -1,0 +1,2 @@
+sap.ui.define(["sap/ui/core/mvc/Controller","riskmitigation/ui5/formatter/formatter"],function(t,n){"use strict";return t.extend("riskmitigation.ui5.controller.Main",{formatter:n,onInit:function(){},onRiskPress:function(t){const n=t.getSource();const o=this.getOwnerComponent().getRouter();const e=n.getBindingContext();const i=e.getProperty("ID");o.navTo("RouteDetail",{id:i})}})});
+//# sourceMappingURL=Main.controller.js.map

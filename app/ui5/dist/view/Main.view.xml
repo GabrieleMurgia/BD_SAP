@@ -11,13 +11,11 @@
           <Column><Text text="Impatto"/></Column>
           <Column><Text text="Criticità"/></Column>
           <Column><Text text="Owner"/></Column>
-          
         </columns>
         <items>
           <ColumnListItem type="Active" press="onRiskPress">
             <cells>
               <Text text="{title}"/>
-              <Text text="Descrizione: {descr}" class="sapUiTinyMarginBottom"/>
               <Text text="{ path: 'impact', formatter: '.formatter.formatImpact' }"/>
               <Text text="{ path: 'criticality', formatter: '.formatter.formatCriticality' }"/>
               <Text text="{Owner}"/>
@@ -28,4 +26,3 @@
     </content>
   </Page>
 </mvc:View>
-

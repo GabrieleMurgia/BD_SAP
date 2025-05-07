@@ -1,0 +1,15 @@
+<mvc:View controllerName="riskmitigation.ui5.controller.Detail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <Page title="Dettaglio Rischio" showNavButton="true" navButtonPress="onNavBack">
+    <content>
+      <VBox class="sapUiSmallMargin">
+        <Text text="{title}" class="sapUiTinyMarginBottom"/>
+        <Text text="Impatto: {impact}" />
+        <Text text="Criticità: {criticality}" />
+        <Text text="Owner: {Owner}" class="sapUiSmallMarginBottom"/>
+        <Text text="Mitigazione: {mitigation/description}" />
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>

@@ -1,0 +1,2 @@
+sap.ui.define([],function(){"use strict";return{formatImpact:function(r){switch(r){case 1:return"Low";case 2:return"Medium";case 3:return"High";default:return r}},formatCriticality:function(r){switch(r){case 1:return"Minor";case 2:return"Major";case 3:return"Critical";default:return r}}}});
+//# sourceMappingURL=formatter.js.map
